@@ -36,7 +36,7 @@ export class CheckoutComponent {
         // I use stripe to redirect To Checkout page of Stripe platform
         this.stripe.redirectToCheckout({
           sessionId: data.id,
-        });
+        }).subscribe((data: any) => {console.log(data);});
       });
   }
 }

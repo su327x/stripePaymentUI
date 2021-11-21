@@ -8,7 +8,7 @@ const routes: Routes = [
   {
     path: 'checkout', component: CheckoutComponent, },
   { path: 'cancel', component: CancelComponent },
-  { path: 'success', component: SucessComponent },
+  { path: 'success/:id', component: SucessComponent },
 ];
 
 @NgModule({
